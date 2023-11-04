@@ -7,27 +7,11 @@ export default function Theme() {
 	}
 
 	function toggle(hideButton, showButton) {
-		if (localStorage.getItem('theme') === 'theme-dark') {
-			showButton.classList.remove('hide')
-			hideButton.classList.add('hide')
-			setTheme('theme-light')
-		} else {
-			showButton.classList.remove('hide')
-			hideButton.classList.add('hide')
-			setTheme('theme-dark')
-		}
+		setTheme('theme-light')
 	}
 
 	;(function () {
-		if (localStorage.getItem('theme') === 'theme-dark') {
-			buttonLightTheme.classList.remove('hide')
-			buttonDarkTheme.classList.add('hide')
-			setTheme('theme-light')
-		} else {
-			buttonDarkTheme.classList.remove('hide')
-			buttonLightTheme.classList.add('hide')
-			setTheme('theme-dark')
-		}
+		setTheme('theme-light')
 	})()
 	return {
 		toggle

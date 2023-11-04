@@ -19,17 +19,6 @@
 	--cs-secondary: #ffffff;
 }
 
-.theme-dark {
-	--number-color: #ffffff;
-	--svg-path-color: #c4c4cc;
-	--svg-path-active-color: #ffffff;
-	--bg-primary-color: #121214;
-	--bg-secondary-color: #29292e;
-	--button-active-color: #9a9a9a;
-	--cs-primary: #232327;
-	--cs-secondary: #2f2f35;
-}
-
 *::selection {
 	color: none;
 	background: transparent;
@@ -59,17 +48,6 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	gap: 5rem;
-}
-
-#title {
-	text-align: center;
-    padding: 1%;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    position: top; /* Set the position to fixed */
-    width: 70%;
-    background-color: #f9f9f9;
-    z-index: 999;
 }
 
 .timer {
@@ -125,10 +103,6 @@ main {
 	box-shadow: 7px 7px 14px var(--cs-primary), -7px -7px 14px var(--cs-secondary);
 }
 
-.theme-dark .cards .card button {
-	background: #121214;
-	box-shadow: 6px 6px 12px #0c0c0d, -6px -6px 12px #18181b;
-}
 
 .cards .card.active button {
 	background: var(--button-active-color);
@@ -174,12 +148,6 @@ input[type='range']::-webkit-slider-runnable-track {
 	box-shadow: none;
 	border: none;
 	background: transparent;
-}
-
-footer .themes {
-	position: absolute;
-	top: 2rem;
-	right: 5rem;
 }
 
 @media (min-width: 850px) {
