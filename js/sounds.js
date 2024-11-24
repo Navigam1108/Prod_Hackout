@@ -5,10 +5,10 @@ export default function () {
 	const buttonPressAudio = new Audio(
 		'https://github.com/maykbrito/automatic-video-creator/blob/master/audios/button-press.wav?raw=true'
 	)
-	const forestAudio = new Audio('../audio/forest.wav')
-	const coffeeAudio = new Audio('../audio/coffee.wav')
-	const rainAudio = new Audio('../audio/rain.wav')
-	const fireAudio = new Audio('../audio/fire.wav')
+	const forestAudio = new Audio('/audio/forest.wav')
+	const coffeeAudio = new Audio('audio/coffee.wav')
+	const rainAudio = new Audio('/audio/rain.wav')
+	const fireAudio = new Audio('audio/fire.wav')
 
 	buttonPressAudio.volume = 0.02
 	kitchenTimerAudio.volume = 0.05
